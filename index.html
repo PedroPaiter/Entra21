@@ -6,22 +6,18 @@
     <title>Git</title>
 </head>
 <body>
-    <h1>Conversor de Moedas</h1>
-    <label for="valueInput">Valor</label>
-    <input type="text" id="valueInput"><br><br>
-    <label for="fromCurrencySelect">De</label>
-    <select name="fromCurrency" id="fromCurrencySelect">
-        <option value="BRL" selected>Real (BRL)</option>
-        <option value="USD">Dólar (USD)</option>
-        <option value="EUR">Euro</option>
-    </select>
-    <label for="toCurrencySelect">Para</label>
-    <select name="toCurrency" id="toCurrencySelect">
-        <option value="BRL">Real (BRL)</option>
-        <option value="USD" selected>Dólar (USD)</option>
-        <option value="EUR">Euro (EUR)</option>
-    </select>
-    <button id="submitButton">Converter</button>
+    <h1>Calculadora</h1>
+    <label for="firstValue">Valor</label>
+        <input type="number" id="firstValue" placeholder="Digite o primeiro valor!"><br><br>
+    
+    <button id="adicao">+</button> 
+    <button id="subtracao">-</button>
+    <button id="divisao">/</button>
+    <button id="multiplicacao">*</button> <br><br>
+
+    <label for="secondValue">Valor</label>
+        <input type="text" id="secondValue" placeholder="Digite o segundo valor!"><br><br>
+    
     <p id="result"></p>
     <script src="main.js"></script>
 </body>
