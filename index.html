@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <label for="valueInput">Valor</label>
+    <input type="text" id="valueInput"><br><br>
+    <label for="fromCurrencySelect">De</label>
+    <select name="fromCurrency" id="fromCurrencySelect">
+        <option value="BRL" selected>Real (BRL)</option>
+        <option value="USD">Dólar (USD)</option>
+        <option value="EUR">Euro</option>
+    </select>
+    <label for="toCurrencySelect">Para</label>
+    <select name="toCurrency" id="toCurrencySelect">
+        <option value="BRL">Real (BRL)</option>
+        <option value="USD" selected>Dólar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+    </select>
+    <button id="submitButton">Converter</button>
+    <p id="result"></p>
+    <script src="main.js"></script>
+</body>
+</html>
