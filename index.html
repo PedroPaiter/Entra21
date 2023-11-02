@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git</title>
 </head>
+
 <body>
     <h1>Calculadora</h1>
-    <label for="firstValue">Valor</label>
-        <input type="number" id="firstValue" placeholder="Digite o primeiro valor!"><br><br>
-    
-    <button id="adicao">+</button> 
-    <button id="subtracao">-</button>
-    <button id="divisao">/</button>
-    <button id="multiplicacao">*</button> <br><br>
+    <p id="resultado"></p>
 
-    <label for="secondValue">Valor</label>
-        <input type="text" id="secondValue" placeholder="Digite o segundo valor!"><br><br>
-    
-    <p id="result"></p>
-    <script src="main.js"></script>
+    <table>
+        <tr>
+            <td class="botao" onclick="inserir('+')"><button>+</button></td>
+            <td class="botao" onclick="inserir('-')"><button>-</button></td>
+            <td class="botao" onclick="inserir('/')"><button>/</button></td>
+            <td class="botao" onclick="inserir('*')"><button>*</button></td>
+        </tr>
+        <tr>
+            <td class="botao" onclick="inserir('7')"><button>7</button></td>
+            <td class="botao" onclick="inserir('8')"><button>8</button></td>
+            <td class="botao" onclick="inserir('9')"><button>9</button></td>
+            <td class="botao" onclick="clean()"><button>c</button></td>
+        </tr>
+        <tr>
+            <td class="botao" onclick="inserir('4')"><button>4</button></td>
+            <td class="botao" onclick="inserir('5')"><button>5</button></td>
+            <td class="botao" onclick="inserir('6')"><button>6</button></td>
+            <td class="botao" onclick="inserir('0')"><button>0</button></td>
+        </tr>
+        <tr>
+            <td class="botao" onclick="inserir('1')"><button>1</button></td>
+            <td class="botao" onclick="inserir('2')"><button>2</button></td>
+            <td class="botao" onclick="inserir('3')"><button>3</button></td>
+            <td class="botao" onclick="calcular()"><button>=</button></td>
+        </tr>
+    </table>
+    <script src="calculator.js"></script>
 </body>
 </html>
