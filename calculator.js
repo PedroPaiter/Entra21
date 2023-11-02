@@ -5,3 +5,7 @@ function calcular(){
         document.getElementById('resultado').innerHTML =  "Resultado: " + eval(resultado);
     }
 }
+
+function limpar(){
+    document.getElementById('resultado').innerHTML = "";
+}
